@@ -1,0 +1,22 @@
+{
+  "name": "teczowa-przygoda-jednorozca",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc --noEmit && vite build",
+    "test": "tsx --test src/game/*.test.ts && npm run test:startup",
+    "test:startup": "npm run build && node --test tests/startup.test.mjs"
+  },
+  "dependencies": {
+    "phaser": "^3.90.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "happy-dom": "^21.0.4",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.2"
+  }
+}
