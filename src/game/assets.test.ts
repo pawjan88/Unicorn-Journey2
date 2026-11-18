@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 import { GAME_ASSETS, artUrl } from './assets';
 
 function imageFile(key: string) {
-  return readFileSync('public' + artUrl(key));
+  return readFileSync('public/' + artUrl(key));
 }
 
 test('the menu and every Phaser texture reference a complete local WebP', () => {

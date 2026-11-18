@@ -8,4 +8,4 @@ export const GAME_ASSETS = [
   'star', 'rainbow', 'rainbow-ball'
 ];
 
-export const artUrl = (name: string) => `/art/${name}.webp`;
+export const artUrl = (name: string) => `art/${name}.webp`;

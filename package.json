@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
-    "build": "tsc --noEmit && vite build",
+    "build": "tsc --noEmit && vite build --base=./",
     "test": "tsx --test src/game/*.test.ts && npm run test:startup",
     "test:startup": "npm run build && node --test tests/startup.test.mjs"
   },
